@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    background-color: black;
     }
     
     body {
@@ -8,7 +9,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: flex-start;
+    justify-content: space-around;
     }
     
     header {
@@ -27,10 +28,13 @@
     
     .card1,
     .card2,
-    .card3 {
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
         flex: 0 0 calc(33.33% - 20px);
         height: 100px;
-        border-radius: 10px solid white;
+        border-radius: 10px solid beige;
         position: relative;
         overflow: hidden;
         cursor: default;
@@ -39,8 +43,12 @@
     
     .card1:hover,
     .card2:hover,
-    .card3:hover {
+    .card3:hover,
+    .card4:hover,
+    .card5:hover,
+    .card6:hover {
         cursor: pointer;
+        box-shadow: inset 0pc 0pc 12px rgb(109, 236, 102), 0 0 15px rgb(19, 255, 74);
     }
     
     
@@ -64,9 +72,10 @@
         margin: 1;
         margin-top: 10px;
         font-size: 1.2em;
-        background-color: white;
+        background-color: beige;
         padding: 5px 10px;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 10px 10px;
+        transition: all 0.5 ease-in-out;
     }
     
     .card-text {
