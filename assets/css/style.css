@@ -1,83 +1,120 @@
-* {
-    box-sizing: border-box;
-    background-color: black;
-    }
-    
-    body {
+body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-around;
-    }
-    
-    header {
-    padding: 40px;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    color: white;
     text-align: center;
-    color: rgb(40, 117, 40);
-    }
-    
-    .card-container {
-        grid-template-columns: auto;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 20px;
-    }
-    
-    .card1,
-    .card2,
-    .card3,
-    .card4,
-    .card5,
-    .card6 {
-        flex: 0 0 calc(33.33% - 20px);
-        height: 100px;
-        border-radius: 10px solid beige;
-        position: relative;
-        overflow: hidden;
-        cursor: default;
-        text-align: center;
-    }
-    
-    .card1:hover,
-    .card2:hover,
-    .card3:hover,
-    .card4:hover,
-    .card5:hover,
-    .card6:hover {
-        cursor: pointer;
-        box-shadow: inset 0pc 0pc 12px rgb(109, 236, 102), 0 0 15px rgb(19, 255, 74);
-    }
-    
-    
-    .card-overlay {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 5px;
-        background-color: black;
-        color: green;
-        transition: opacity 0.3s;
-        opacity: 0;
-    }
-    
-    .card-overlay {
-        opacity: 1;
-    }
-    
-    .card-header {
-        margin: 1;
-        margin-top: 10px;
-        font-size: 1.2em;
-        background-color: beige;
-        padding: 5px 10px;
-        border-radius: 10px 10px 10px 10px;
-        transition: all 0.5 ease-in-out;
-    }
-    
-    .card-text {
-        margin: 5px 0;
-    }
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid green;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.about,
+.work,
+.linkedIn {
+    padding: 50px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    border: 2px solid gray;
+    padding: 20px;
+    text-align: center
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+
+.about-box,
+.work-box,
+.linkedIn-box {
+    background-color:beige;
+    padding: 30px;
+    border: 5px solid rgb(85, 214, 16);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-box:hover,
+.work-box:hover,
+.linkedIn-box:hover {
+    transform: scale(1.05);
+}
+
+.about-box h2,
+.work-box h2,
+.linkedIn-box h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-box p,
+.work-box p,
+.linkedIn-box p {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-box img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+.website-box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.website-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
