@@ -5,3 +5,9 @@
 -Work
 -LinkedIn
 
+## Click a link
+Click a link for either my LinkedIn or to my first website application!
+
+### License
+MIT
+
