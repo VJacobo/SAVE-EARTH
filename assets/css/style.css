@@ -38,7 +38,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    margin: 20px;
+    margin: 0;
 }
 
 .about-box img {
@@ -56,7 +56,7 @@ nav a {
     transition: transform 0.3s;
     width: 400px;
     height: 350px;
-    margin: 20px auto 20px 0;
+    margin:0;
     display: flex;
     justify-content: 100vh;
 }
@@ -70,7 +70,7 @@ nav a {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 300px;
-    margin: 20px auto 20px 0;
+    margin: 0;
 }
 
 .about-box:hover,
